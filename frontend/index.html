@@ -380,9 +380,9 @@
       </li>
       <li class="list-inline-item">
           <ul class="card-meta-tag list-inline">
-          <li class="list-inline-item"><a href="tags.html">
-            {% for m in %}
-            {{ post.many }}</a></li>
+            {% for t in post.many.all %}
+          <li class="list-inline-item"><a href="tags.html">{{ t }}</a></li>
+            {% endfor %}
           <!-- <li class="list-inline-item"><a href="tags.html">Elements</a></li> -->
           </ul>
       </li>
