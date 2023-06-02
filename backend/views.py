@@ -10,3 +10,12 @@ def index(request):
         'turi': turi
     }
     return render(request, 'index.html', context)
+
+
+def shop(request, slug ):
+    shop = Post.objects.get(slug=slug)
+    context = {
+        'shop' : shop
+    }
+
+    return render(request, 'post.html', context)

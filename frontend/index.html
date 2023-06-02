@@ -364,7 +364,7 @@
       <img src="{{ post.img2 }}" class="card-img-top" alt="post-thumb">
   </div>
   <div class="card-body">
-      <h3 class="mb-3"><a class="post-title" href="post-elements.html">{{ post.name }}</a></h3>
+      <h3 class="mb-3"><a class="post-title" href="post/{{ post.slug }}">{{ post.name }}</a></h3>
       <ul class="card-meta list-inline">
       <li class="list-inline-item">
           <a href="author-single.html" class="card-meta-author">
@@ -388,12 +388,12 @@
       </li>
       </ul>
       <p>{{ post.content }}</p>
-      <a href="post-elements.html" class="btn btn-outline-primary">Read More</a>
+      <a href=" post/{{ post.slug }} " class="btn btn-outline-primary">Read More</a>
   </div>
   </article>
 
   {% endfor %}
-
+<!-- 
   <article class="card mb-5">
   <div class="post-slider">
       <img src="{% static 'images/post/post-3.jpg' %}" class="card-img-top" alt="post-thumb">
@@ -549,7 +549,7 @@
       <p>It’s no secret that the digital industry is booming. From exciting startups to global brands, companies are reaching out to digital agencies, responding to the new possibilities available.</p>
       <a href="post-details.html" class="btn btn-outline-primary">Read More</a>
   </div>
-  </article>
+  </article> -->
   
   <ul class="pagination justify-content-center">
     <li class="page-item page-item active ">

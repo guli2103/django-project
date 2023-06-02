@@ -1,12 +1,5 @@
+{% load static %}
 <!DOCTYPE html>
-
-<!--
- // WEBSITE: https://themefisher.com
- // TWITTER: https://twitter.com/themefisher
- // FACEBOOK: https://www.facebook.com/themefisher
- // GITHUB: https://github.com/themefisher/
--->
-
 <html lang="en-us"><head>
   <meta charset="utf-8">
   <title>Reader | Personal Bulma Blog Template</title>
@@ -19,16 +12,16 @@
 
   <!-- plugins -->
   
-  <link rel="stylesheet" href="plugins/bulma/bulma.min.css">
-  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
-  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <link rel="stylesheet" href="{% static 'plugins/bulma/bulma.min.css' %}">
+  <link rel="stylesheet" href="{% static 'plugins/themify-icons/themify-icons.css' %}">
+  <link rel="stylesheet" href="{% static 'plugins/slick/slick.css' %}">
 
   <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="css/style.css" media="screen">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" media="screen">
 
   <!--Favicon-->
-  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
+  <link rel="icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
 
   <meta property="og:title" content="Reader | Personal Bulma Blog Template" />
   <meta property="og:description" content="This is meta description" />
@@ -43,7 +36,7 @@
     <div class="container">
       <div class="navbar-brand">
         <a class="navbar-item" href="index.html">
-          <img class="img-fluid" width="100px" src="images/logo.png" alt="Reader | Personal Bulma Blog Template">
+          <img class="img-fluid" width="100px" src="{% static 'images/logo.png' %}" alt="Reader | Personal Bulma Blog Template">
         </a>
     
         <a role="button" class="navbar-burger burger mt-2" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -216,7 +209,7 @@
           <div class="card has-text-centered shadow-none">
             <a href="#!">
                <span class="badge badge-primary">NEW</span>
-               <img src="images/shop/01.jpg" alt="" class="w-100">
+               <img src="{% static 'images/shop/01.jpg' %}" alt="" class="w-100">
                <div class="card-body">
                   <h4 class="is-uppercase mb-3">smart watch</h4>
                   <p class="h4 help is-dark has-text-weight-light mb-3">Lip Gloss</p>
@@ -228,7 +221,7 @@
        <div class="column is-3-widescreen is-4-desktop is-6-tablet">
           <div class="card has-text-centered shadow-none">
              <a href="#!">
-               <img src="images/shop/02.jpg" alt="" class="w-100">
+               <img src="{% static 'images/shop/02.jpg' %}" alt="" class="w-100">
                <div class="card-body">
                   <h4 class="is-uppercase mb-3">Wall clock</h4>
                   <p class="h4 help is-dark has-text-weight-light mb-3">Lip Gloss</p>
@@ -241,7 +234,7 @@
           <div class="card has-text-centered shadow-none">
              <a href="#!">
                <span class="badge badge-primary">SALE</span>
-               <img src="images/shop/03.jpg" alt="" class="w-100">
+               <img src="{% static 'images/shop/03.jpg' %}" alt="" class="w-100">
                <div class="card-body">
                   <h4 class="is-uppercase mb-3">Wooden slut</h4>
                   <p class="h4 help is-dark has-text-weight-light mb-3">Lip Gloss</p>
@@ -253,7 +246,7 @@
        <div class="column is-3-widescreen is-4-desktop is-6-tablet">
           <div class="card has-text-centered shadow-none">
              <a href="#!">
-               <img src="images/shop/04.jpg" alt="" class="w-100">
+               <img src="{% static 'images/shop/04.jpg' %}" alt="" class="w-100">
                <div class="card-body">
                   <h4 class="is-uppercase mb-3">Sun-glass</h4>
                   <p class="h4 help is-dark has-text-weight-light mb-3">Lip Gloss</p>
@@ -266,7 +259,7 @@
           <div class="card has-text-centered shadow-none">
              <a href="#!">
                <span class="badge badge-primary">new</span>
-               <img src="images/shop/05.jpg" alt="" class="w-100">
+               <img src="{% static 'images/shop/05.jpg' %}" alt="" class="w-100">
                <div class="card-body">
                   <h4 class="is-uppercase mb-3">Sun-glass</h4>
                   <p class="h4 help is-dark has-text-weight-light mb-3">Lip Gloss</p>
@@ -278,7 +271,7 @@
        <div class="column is-3-widescreen is-4-desktop is-6-tablet">
           <div class="card has-text-centered shadow-none">
              <a href="#!">
-               <img src="images/shop/06.jpg" alt="" class="w-100">
+               <img src="{% static 'images/shop/06.jpg' %}" alt="" class="w-100">
                <div class="card-body">
                   <h4 class="is-uppercase mb-3">showpiece</h4>
                   <p class="h4 help is-dark has-text-weight-light mb-3">Lip Gloss</p>
@@ -291,7 +284,7 @@
           <div class="card has-text-centered shadow-none">
              <a href="#!">
                <span class="badge badge-primary">sale</span>
-               <img src="images/shop/07.jpg" alt="" class="w-100">
+               <img src="{% static 'images/shop/07.jpg' %}" alt="" class="w-100">
                <div class="card-body">
                   <h4 class="is-uppercase mb-3">smart watch</h4>
                   <p class="h4 help is-dark has-text-weight-light mb-3">Lip Gloss</p>
@@ -303,7 +296,7 @@
        <div class="column is-3-widescreen is-4-desktop is-6-tablet">
           <div class="card has-text-centered shadow-none">
              <a href="#!">
-               <img src="images/shop/08.jpg" alt="" class="w-100">
+               <img src="{% static 'images/shop/08.jpg' %}" alt="" class="w-100">
                <div class="card-body">
                   <h4 class="is-uppercase mb-3">Air pods</h4>
                   <p class="h4 help is-dark has-text-weight-light mb-3">Lip Gloss</p>
@@ -315,7 +308,7 @@
        <div class="column is-3-widescreen is-4-desktop is-6-tablet">
           <div class="card has-text-centered shadow-none">
              <a href="#!">
-               <img src="images/shop/09.jpg" alt="" class="w-100">
+               <img src="{% static 'images/shop/09.jpg' %}" alt="" class="w-100">
                <div class="card-body">
                   <h4 class="is-uppercase mb-3">Digital clock</h4>
                   <p class="h4 help is-dark has-text-weight-light mb-3">Lip Gloss</p>
@@ -327,7 +320,7 @@
        <div class="column is-3-widescreen is-4-desktop is-6-tablet">
           <div class="card has-text-centered shadow-none">
              <a href="#!">
-               <img src="images/shop/10.jpg" alt="" class="w-100">
+               <img src="{% static 'images/shop/10.jpg' %}" alt="" class="w-100">
                <div class="card-body">
                   <h4 class="is-uppercase mb-3">smart watch</h4>
                   <p class="h4 help is-dark has-text-weight-light mb-3">Lip Gloss</p>
@@ -340,7 +333,7 @@
           <div class="card has-text-centered shadow-none">
              <a href="#!">
                <span class="badge badge-primary">sale</span>
-               <img src="images/shop/11.jpg" alt="" class="w-100">
+               <img src="{% static 'images/shop/11.jpg' %}" alt="" class="w-100">
                <div class="card-body">
                   <h4 class="is-uppercase mb-3">Wall clock</h4>
                   <p class="h4 help is-dark has-text-weight-light mb-3">Lip Gloss</p>
@@ -352,7 +345,7 @@
        <div class="column is-3-widescreen is-4-desktop is-6-tablet">
           <div class="card has-text-centered shadow-none">
              <a href="#!">
-               <img src="images/shop/12.jpg" alt="" class="w-100">
+               <img src="{% static 'images/shop/12.jpg' %}" alt="" class="w-100">
                <div class="card-body">
                   <h4 class="is-uppercase mb-3">smart watch</h4>
                   <p class="h4 help is-dark has-text-weight-light mb-3">Lip Gloss</p>
@@ -389,16 +382,16 @@
       <h2 class="h3 mb-4">INSTAGRAM POST</h2>
       
       <div class="instagram-slider">
-        <div class="instagram-post"><img src="images/instagram/1.jpg"></div>
-        <div class="instagram-post"><img src="images/instagram/2.jpg"></div>
-        <div class="instagram-post"><img src="images/instagram/4.jpg"></div>
-        <div class="instagram-post"><img src="images/instagram/3.jpg"></div>
-        <div class="instagram-post"><img src="images/instagram/2.jpg"></div>
-        <div class="instagram-post"><img src="images/instagram/1.jpg"></div>
-        <div class="instagram-post"><img src="images/instagram/3.jpg"></div>
-        <div class="instagram-post"><img src="images/instagram/4.jpg"></div>
-        <div class="instagram-post"><img src="images/instagram/2.jpg"></div>
-        <div class="instagram-post"><img src="images/instagram/4.jpg"></div>
+        <div class="instagram-post"><img src="{% static 'images/instagram/1.jpg' %}"></div>
+        <div class="instagram-post"><img src="{% static 'images/instagram/2.jpg' %}"></div>
+        <div class="instagram-post"><img src="{% static 'images/instagram/4.jpg' %}"></div>
+        <div class="instagram-post"><img src="{% static 'images/instagram/3.jpg' %}"></div>
+        <div class="instagram-post"><img src="{% static 'images/instagram/2.jpg' %}"></div>
+        <div class="instagram-post"><img src="{% static 'images/instagram/1.jpg' %}"></div>
+        <div class="instagram-post"><img src="{% static 'images/instagram/3.jpg' %}"></div>
+        <div class="instagram-post"><img src="{% static 'images/instagram/4.jpg' %}"></div>
+        <div class="instagram-post"><img src="{% static 'images/instagram/2.jpg' %}"></div>
+        <div class="instagram-post"><img src="{% static 'images/instagram/4.jpg' %}"></div>
       </div>
   </div>
   
@@ -411,7 +404,7 @@
           </ul>
       </div>
       <div class="column is-2-desktop has-text-centered mb-4">
-          <a href="index.html"><img class="img-fluid" width="100px" src="images/logo.png" alt="Reader | Hugo Personal Blog Template"></a>
+          <a href="index.html"><img class="img-fluid" width="100px" src="{% static 'images/logo.png' %}" alt="Reader | Hugo Personal Blog Template"></a>
       </div>
       <div class="column is-5-desktop has-text-right-desktop has-text-centered mb-4">
           <ul class="footer-list mb-0">
@@ -437,13 +430,13 @@
 
 
   <!-- JS Plugins -->
-  <script src="plugins/jQuery/jquery.min.js"></script>
+  <script src="{% static 'plugins/jQuery/jquery.min.js' %}"></script>
 
-  <script src="plugins/slick/slick.min.js"></script>
+  <script src="{% static 'plugins/slick/slick.min.js' %}"></script>
 
-  <script src="plugins/instafeed/instafeed.min.js"></script>
+  <script src="{% static 'plugins/instafeed/instafeed.min.js' %}"></script>
 
 
   <!-- Main Script -->
-  <script src="js/script.js"></script></body>
+  <script src="{% static 'js/script.js' %}"></script></body>
 </html>
